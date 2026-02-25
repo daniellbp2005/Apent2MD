@@ -1,0 +1,27 @@
+footer{
+    width: 100%;
+    margin: auto;
+    background-color: #1e1e1e;
+    height: auto;
+    display: flex;
+    color: white;
+    flex-direction: row;
+    padding: 0.9rem 0rem;
+}
+.col{
+    width: 22%;
+    height: auto;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+
+}
+.espaco{
+    width: 8%;
+    height: auto;
+}
+.meio{
+    display: flex;
+    width: 40%;
+    height: auto;
+    text-align: left;
+}
