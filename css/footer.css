@@ -7,8 +7,9 @@ footer{
     color: white;
     flex-direction: row;
     padding: 0.9rem 0rem;
+    margin-top: 1rem;
 }
-.col{
+.col-footer{
     width: 22%;
     height: auto;
     font-family: "Open Sans", sans-serif;
