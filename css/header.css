@@ -73,10 +73,17 @@ nav{
     visibility: visible;
 }
 
-.submenu:hover li{
+.button {
+    height: 100%;
+    width: 100%;
+    opacity: 100%;
+    border: 0px solid ;
+    background-color: #00000000;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
     font-size: 17px;
+    cursor: pointer;
 }
-
 .logo{
     margin-left: 35px;
     width: 80px;
