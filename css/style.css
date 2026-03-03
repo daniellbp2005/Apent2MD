@@ -96,7 +96,7 @@ a{
 }
 .conteiner{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center ;
 }   
@@ -110,37 +110,64 @@ main{
     gap: 20px;
     height: auto;
 }
-.col{
-    margin-top:  1rem;
+
+.col-card{                     
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .7s;
+    cursor: pointer;
+    box-shadow: 5px 7.5px 10px #5e17eb71;
     border-radius: 0.3rem;
-    color: white;
-    transition: transform .2s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    font-size: clamp(1rem,3vw,2rem);
-    font-family: "Cal Sans", sans-serif;
-    justify-content: end;
-    min-height: 500px;
+    min-height: 600px;
 }
-.col:hover{
-    transform: translateY(-18px);
+.col-card:hover{
+    transform: rotateY(180deg);
 }
-
-.titulo-conteiner{
-    margin-right: 10px;
-    color: aliceblue;
-}
-.blur{
+.card-face{     /* Os dois elementos ficam na mesma div*/
+    position: absolute;
     width: 100%;
-    height: 25%;
-    transition: transform .8s ease-in-out;
+    height: 100%;
+    backface-visibility: hidden; /* Ele esconde o lado da trás */
+    display: flex;
+    align-items:end;
+    justify-content: right;
+    font-size: clamp(1rem,3vw,2.5rem);
+    font-family: "Cal Sans", sans-serif;
+    color: #fff;
 }
-.blur:hover{
-    background:linear-gradient( 180deg,#761fc709,#8613f17c,#8018e24f,#8311ee6b);
-
+.card-back{
+    transform: rotateY(180deg);  /* cmc virado */
+    font-size: clamp(8px,5vw,20px);
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+    font-weight: 600;
 }
-
+main-2{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 95%;
+    min-height:200px;
+    height: auto;
+}
+.col-main-2e{
+    width: 50%;
+    height: auto;
+    min-height: 300px;
+    background-image: url(../img/montedemais.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.col-main-2d{
+    color: white;
+    font-family:  "Cal Sans", sans-serif;
+    width: 50%;
+    text-align: right;
+    font-size: clamp(2rem,6vw,5rem);
+}
 #foto-um{
     background-image: url(../img/col-img3.jpg);
     background-size: cover;
@@ -224,6 +251,7 @@ section{
 .col-section{
     font-family: "Open Sans", sans-serif;
     color: #FFF;
+    line-height: 2;
 }
 
 .col-section_Black{
@@ -235,6 +263,7 @@ section{
     font-size:  clamp(1rem,3vw,2rem);
     font-family:  "Cal Sans", sans-serif;
     color: #5e17eb;
+    text-align: right;
 }
 
 .col-section h2{
@@ -247,11 +276,11 @@ section{
 #sec-um{
     opacity: 0%;
     margin-left: 2%;
-    width: 70%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    font-family: "Open Sans", sans-serif;
+    font-family:  "Cal Sans", sans-serif;
     font-size:   clamp(2rem,4vw,3rem);
 }
 #sec-dois{
@@ -262,11 +291,20 @@ section{
     width: 100%;
     height: 95%;
     border-radius: 100%;
-}
+}   
 #sec-tres{
     opacity: 0% ;
     margin-left: 2%;
-    width: 70%;
+    width: 50%;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: right;
+}
+.sec-tres{
+    width: 50%;
+    text-align:right;
+    margin-right: 5%;
+
 }
 section:hover{
     transform: scale(1.03);
