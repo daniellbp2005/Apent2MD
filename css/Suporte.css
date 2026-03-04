@@ -1,4 +1,3 @@
-
 *{
     padding: 0;
     margin: 0;
@@ -9,7 +8,7 @@ body{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    background-color: black;
 }
 
 article{
@@ -19,13 +18,10 @@ article{
     z-index: 10;
     display: flex;
     align-items: center;
-
-
 }
 .hole{
     width: 100%;
     height:auto;
-
 }
 .subtitulo{
     position: absolute;
@@ -38,7 +34,7 @@ article{
 .apresent{
     font-size: clamp(4rem, 12vw, 16rem);
     font-family: "Cal Sans", sans-serif;
-    color: #000000;
+    color: #fff;
     margin-left: 4%;   
 }
 
@@ -46,7 +42,7 @@ article{
     position: static;
     font-size: clamp(1.5rem,3vw,3rem);
     font-family:  "Cal Sans", sans-serif;
-    color: #000000;
+    color: #fff;
     left: 15%;
     margin-left: 15%;
    
@@ -65,9 +61,9 @@ article{
     padding: 0.6rem;
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
-    background-color: #e4600e;
-    color: #000000;
-    border: 1px solid #e4600e;
+    background-color: #5e17eb;
+    color: #fff;
+    border: 1px solid #5e17eb;
     border-radius: 4rem;
     transition: transform .3s ease-in-out;
   
@@ -77,9 +73,9 @@ article{
     padding: 0.6rem;
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
-    background-color: #ffffff;
-    color: #000000;
-    border: 1px solid #ffffff;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #1a1a1a;
     border-radius: 4rem;
     transition: transform .3s ease-in-out;
  
@@ -87,16 +83,16 @@ article{
 }
 .botao-1:hover{
     transform: translateY(-8px);
-    border: 1px solid #000000;
+    border: 1px solid #fff;
   
 }
 .botao-2:hover{
     transform: translateY(-8px);
-    border: 1px solid #e4600e;
+    border: 1px solid #5e17eb;
 }
 a{
     text-decoration: none;
-    color: #000000;
+    color: #fff;
 }
 .conteiner{
     display: flex;
@@ -120,7 +116,7 @@ main{
     transform-style: preserve-3d;
     transition: transform .7s;
     cursor: pointer;
-    box-shadow: 5px 7.5px 10px #e4600e71;
+    box-shadow: 5px 7.5px 10px #5e17eb71;
     border-radius: 0.3rem;
     min-height: 600px;
 }
@@ -137,7 +133,7 @@ main{
     justify-content: right;
     font-size: clamp(1rem,3vw,2.5rem);
     font-family: "Cal Sans", sans-serif;
-    color: #ffffff;
+    color: #fff;
 }
 .card-back{
     transform: rotateY(180deg);  /* cmc virado */
@@ -160,13 +156,13 @@ main-2{
     width: 50%;
     height: auto;
     min-height: 300px;
-    background-image: url(../img/montedemenos.png);
+    background-image: url(../img/montedemais.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .col-main-2d{
-    color: rgb(0, 0, 0);
+    color: white;
     font-family:  "Cal Sans", sans-serif;
     width: 50%;
     text-align: right;
@@ -266,7 +262,7 @@ section{
 .col-section h1{
     font-size:  clamp(1rem,3vw,2rem);
     font-family:  "Cal Sans", sans-serif;
-    color: #e4600e;
+    color: #5e17eb;
     text-align: right;
 }
 
@@ -366,4 +362,46 @@ section:hover{
 .Modo_Escuro{
     color: #fafafa;
     background-color: #050505;
+}
+
+.paragrafo2{
+    position: static;
+    font-size: clamp(3rem,6vw,6rem);
+    font-family:  "Cal Sans", sans-serif;
+    color: #5e17eb;
+    left: 15%;
+    margin-left: 15%;
+    margin-bottom: 10px;
+   
+}
+.uniao_options{
+    flex-direction:row;
+    text-align: center;
+    display:grid;
+    grid-template-columns: auto;
+}
+.box {
+    border: #1a1a1a 5px ;
+    color: #fafafa;
+    background-color: #5e17eb;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    justify-self: center;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    font-size: 30px;
+    font-family:  "Open Sans", sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.Space {
+    width: 50%;
+    justify-self: center;
+}
+
+.paragrafo a:hover {
+    text-decoration: underline;
 }
