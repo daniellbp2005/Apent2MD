@@ -1,0 +1,38 @@
+footer{
+    width: 100%;
+    margin: auto;
+    background-color: #ffffff;
+    height: auto;
+    display: flex;
+    color: rgb(0, 0, 0);
+    flex-direction: row;
+    padding: 0.9rem 0rem;
+    margin-top: 3rem;
+}
+
+.col-footer{
+    margin-left: 15%;
+    width: 50%;
+    height: auto;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+
+}
+.col-footer h1{
+    font-family: "Cal Sans", sans-serif;
+    font-size: clamp(1.5rem,3vw,2rem);
+}
+
+.meio{
+    display: flex;
+    width: 100%;
+    height: auto;
+    text-align: left;
+}
+.uniao{
+    flex-direction: column;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+}

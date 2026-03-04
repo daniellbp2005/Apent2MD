@@ -46,6 +46,10 @@ function PRETO(){
     const Icon = document.getElementById("sec-um")
     const Icon1 = document.getElementById("sec-tres")
     const IMG = document.getElementById("sec-dois")
+    const Header = document.getElementById("message")
+    const Footer = document.getElementById("resist")
+    const Style = document.getElementById("widen")
+    const Shrek = document.getElementById("BORACO")
     if(click % 2 == 0){
     if(IMG){
     Slide.classList.toggle("Modo_Claro")
@@ -55,8 +59,11 @@ function PRETO(){
     Icon1.classList.toggle("col-section_Black")
     Icon1.classList.remove("col-section") 
     IMG.style.filter = "invert(100%)"
+    Header.href = "./css/header_White.css"
+    Style.href = "./css/css_White.css"
+    Footer.href = "./css/footer_White.css"
+    Shrek.style.filter = "invert(100%)"
     click++
-    console.log(click)
     }
     else{
     Slide.classList.toggle("Modo_Claro")
@@ -65,9 +72,12 @@ function PRETO(){
     Icon.classList.remove("col-section")
     Icon1.classList.toggle("col-section_Black")
     Icon1.classList.remove("col-section")
-    Slide.style.backgroundImage = "url(./Img/Pingu_Branco.gif)"  
+    Slide.style.backgroundImage = "url(./Img/Pingu_Branco.gif)"
+    Shrek.style.filter = "invert(100%)" 
+    Header.href = "./css/header_White.css"
+    Style.href = "./css/css_White.css"
+    Footer.href = "./css/footer_White.css" 
     click++
-    console.log(click)
     }
     }
     else{
@@ -79,6 +89,10 @@ function PRETO(){
     Icon1.classList.toggle("col-section")
     Icon1.classList.remove("col-section_Black")
     IMG.style.filter = "invert(0%)"
+    Shrek.style.filter = "invert(0%)"
+    Header.href = "./css/header.css"
+    Style.href = "./css/style.css"
+    Footer.href = "./css/footer.css"
     click--
     }
     else{
@@ -89,6 +103,10 @@ function PRETO(){
     Icon1.classList.toggle("col-section")
     Icon1.classList.remove("col-section_Black")
     Slide.style.backgroundImage = "url(./Img/Pingu.gif)"
+    Shrek.style.filter = "invert(0%)"
+    Header.href = "./css/header.css"
+    Style.href = "./css/style.css"
+    Footer.href = "./css/footer.css"
     click--
     }
     }
