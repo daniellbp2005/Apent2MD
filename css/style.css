@@ -26,7 +26,7 @@ article{
 .subtitulo{
     position: absolute;
     top: 38%;
-    left: 0%;
+    left: 3%;
     display: flex;
     flex-direction: column;
     gap: 0.1rem;

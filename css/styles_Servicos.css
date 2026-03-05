@@ -7,80 +7,474 @@ body{
     background-color:#000;
 }
 .conteiner{
-    padding: 0.5rem;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    gap:10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+   height: auto;
 }
-section{
+.fotao img{
     width: 100%;
-    min-height: 43rem;
-    height: 100%;
-    background-color:#1e1e1e ;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: right;
-    border-radius: 0.5rem;
+    height: auto;
+    position: relative;
 }
-
-.planos{
-    display: flex;
-    justify-content: center;
-    align-items: right;
-    flex-direction: column;
-    gap: 40px;
+.texto-titulo{
+    position: absolute;
+    top: 38%;
+    left: 3%;
+    color: white;
+    
 }
-.plano{
-    font-size:clamp(0.4rem,1.5vw,1.7rem);
-    font-family: "Open sans", sans-serif;
+.texto-titulo h1{
+    font-family: "Cal Sans", sans-serif;
+    font-size:clamp(3rem, 10vw, 14rem);
+}
+.texto-titulo p{
+    font-family: "Cal Sans",sans-serif;
+    font-size:clamp(1.5rem,3vw,3rem);
+    margin-left: 10%;
+}
+.botoes-inicio{
+    display: flex;
+    margin-left: 35%;
+    gap: 10px;
+}
+.botao1{
+    margin-top: 1%;
+    padding: 0.6rem;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #5e17eb;
     color: #fff;
-    margin-left: 10px;
-
+    border: 1px solid #5e17eb;
+    border-radius: 4rem;
+    transition: transform .3s ease-in-out;
 }
-.acessar{
+
+.botao2{
+    margin-top: 1%;
+    padding: 0.6rem;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #1a1a1a;
+    border-radius: 4rem;
+    transition: transform .3s ease-in-out;
+}
+.botao1:hover{
+    transform: translateY(-8px);
+    border: 1px solid #fff;
+  
+}
+.botao2:hover{
+    transform: translateY(-8px);
+    border: 1px solid #5e17eb;
+}
+
+/* main cards */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.cards{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    width: 75%;
+    height: auto;
+}
+.col-1{
+    display: flex;
+    flex-direction: column;
+    max-width: 23%;
+    gap: 14px;
+    padding: 1.2rem;
+    background: linear-gradient(0deg,#000000,oklch(37.997% 0.07631 168.742 / 0.466));
     border-radius: 1rem;
-    border: 0px;
-    padding: 7px;
-    color: #fff;
-    background-color:#5e17eb;
+    overflow: hidden;
+    border: 1px solid #b2b0b6;
     transition: transform .2s ease-in-out;
-    cursor: pointer;
-    font-family: "Open sans",sans-serif;
 }
-.acessar:hover{
-    transform: translateY(-5px);
+.col-1:hover{
+    transform: translateY(-8px);
+    box-shadow: 5px 3px 2px oklch(55.678% 0.11372 165.327);
 }
-main{
-    width: 100%;
-    height: 100%;
-    background-color: #1e1e1e;
-    border-radius: 0.5rem;
-
-}
-article{
-    margin: 0.5rem;
-    width: auto;
-    min-height: 13rem;
-    height: 100%;
-    background-color: #1e1e1e;
-    border-radius: 0.5rem;
+.pai{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    font-family: "Zalando Sans Expanded",sans-serif;
+    color:oklch(72.553% 0.15717 162.861);
 }
-.col{
-    padding: 0.2rem;
-    display: flex;
-    justify-content: center;
-   
-}
-.foto_pacote{
-    align-self: center;
+.nome{  
     width: 50%;
-    height: 40%;
+}
+.especifico{
+    width: 35%;
+    border-radius: 1rem;
+    border: 0px;
+    padding: 7px;
+    font-family: "Zalando Sans Expanded",sans-serif;
+    font-size: 12px;
+    background-color: oklch(37.997% 0.07631 168.742 / 0.788);
+    color:oklch(72.553% 0.15717 162.861);
+    border: 0.5px solid oklch(37.997% 0.07631 168.742 / 0);
+ 
+}
+.pequena-desc{
+    width: 100%;
+    font-family: "Zalando Sans Expanded",sans-serif;
+    font-size: 12px;
+    color: #d8d7d7;
+}
+.preco{
+    font-size: 30px;
+    color: #d8d7d7;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 500
+    ;
+}
+.topicos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+    font-family: "Open Sans",sans-serif;
+    color: #d8d7d7;
+    font-size: 15px;
+
+}
+.comprar{
+    border-radius: 1rem;
+    border: 0px;
+    padding: 9px 4px;
+    font-family: "Zalando Sans Expanded",sans-serif;
+    transition: transform .2s ease-in-out;
+    cursor: pointer
+}
+.comprar:hover{
+    transform: translateY(-5px);
+    box-shadow: 3px 3px 2px #80b837;
+}
+
+.col-2{
+    display: flex;
+    flex-direction: column;
+    max-width: 23%;
+    gap: 14px;
+    padding: 1rem;
+    background-color: oklch(18.674% 0.00002 271.152);
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid #b2b0b6;
     transition: transform .2s ease-in-out;
 }
-.foto_pacote:hover{
-    transform: scale(1.08)
+.col-2:hover{
+    transform: translateY(-8px);
+    box-shadow: 5px 3px 2px oklch(57.937% 0.11798 102.415);
 }
+.pai-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Zalando Sans Expanded",sans-serif;
+    color:oklch(68.1% 0.162 75.834);
+}
+.nome-2{  
+    width: 50%;
+    color: oklch(68.1% 0.162 75.834);
+}
+.especifico-2{
+    width: 35%;
+    border-radius: 1rem;
+    border: 0px;
+    padding: 7px;
+    font-family: "Zalando Sans Expanded",sans-serif;
+    font-size: 12px;
+    background-color:oklch(47.595% 0.10075 73.359);
+    color:oklch(80.735% 0.1673 74.044);
+    border: 0.5px solid oklch(37.997% 0.07631 168.742 / 0);
+ 
+}
+.pequena-desc{
+    width: 100%;
+    font-family: "Zalando Sans Expanded",sans-serif;
+    font-size: 12px;
+    color: #d8d7d7;
+}
+.preco-2{
+    font-size: 30px;
+    color: #d8d7d7;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 500
+    ;
+}
+.topicos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+    font-family: "Open Sans",sans-serif;
+    color: #d8d7d7;
+    font-size: 15px;
+
+}
+.comprar-2{
+    border-radius: 1rem;
+    border: 0px;
+    padding: 9px 4px;
+    font-family: "Zalando Sans Expanded",sans-serif;
+    transition: transform .2s ease-in-out;
+    background-color: oklch(90.54% 0.13945 95.547);
+    cursor: pointer
+}
+.comprar-2:hover{
+    transform: translateY(-5px);
+    box-shadow: 3px 3px 2px #cfc42b;
+}
+
+.col-3{
+    display: flex;
+    flex-direction: column;
+    max-width: 23%;
+    gap: 14px;
+    padding: 1rem;
+    background-color: oklch(12.9% 0.042 264.695);
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 3px solid #371f68;
+    transition: transform .2s ease-in-out;
+}
+.col-3:hover{
+    transform: translateY(-8px);
+    box-shadow: 5px 3px 2px oklch(37.9% 0.146 265.522);
+}
+.pai-3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Zalando Sans Expanded",sans-serif;
+}
+.nome-3{  
+    width: 50%;
+    color:oklch(68.5% 0.169 237.323);
+}
+.especifico-3{
+    width: 35%;
+    border-radius: 1rem;
+    border: 0px;
+    padding: 7px;
+    font-family: "Zalando Sans Expanded",sans-serif;
+    font-size: 12px;
+    background-color:oklch(37.548% 0.15385 265.888);
+    color:oklch(68.5% 0.169 237.323);
+    border: 0.5px solid oklch(37.997% 0.07631 168.742 / 0);
+}
+.pequena-desc{
+    width: 100%;
+    font-family: "Zalando Sans Expanded",sans-serif;
+    font-size: 12px;
+    color: #d8d7d7;
+}
+.preco-3{
+    font-size: 30px;
+    color:oklch(68.5% 0.169 237.323);
+
+    font-family: "Open Sans",sans-serif;
+    font-weight: 500
+    ;
+}
+.topicos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+    font-family: "Open Sans",sans-serif;
+    color: #d8d7d7;
+    font-size: 15px;
+
+}
+.comprar-3{
+    border-radius: 1rem;
+    border: 0px;
+    padding: 9px 4px;
+    font-family: "Zalando Sans Expanded",sans-serif;
+    transition: transform .2s ease-in-out;
+    background-color:oklch(37.548% 0.15385 265.888);
+    cursor: pointer;
+    color:oklch(68.5% 0.169 237.323);
+;
+}
+.comprar-3:hover{
+    transform: translateY(-5px);
+    box-shadow: 3px 3px 2px oklch(59.048% 0.11885 268.669);
+}
+
+.col-4{
+    display: flex;
+    flex-direction: column;
+    max-width: 23%;
+    gap: 14px;
+    padding: 1rem;
+    background-color: oklch(12.9% 0.042 264.695);
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 3px solid oklch(21.527% 0.08397 6.627);
+    transition: transform .2s ease-in-out;
+}
+.col-4:hover{
+    transform: translateY(-8px);
+    box-shadow: 5px 3px 2px  oklch(46.39% 0.17131 8.812);
+}
+.pai-4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Zalando Sans Expanded",sans-serif;
+}
+.nome-4{  
+    width: 50%;
+    color:oklch(45.5% 0.188 13.697);
+}
+.especifico-4{
+    width: 35%;
+    border-radius: 1rem;
+    border: 0px;
+    padding: 7px;
+    font-family: "Zalando Sans Expanded",sans-serif;
+    font-size: 12px;
+    background-color:oklch(45.5% 0.188 13.697);
+    color: #d8d7d7;
+    border: 0.5px solid oklch(37.997% 0.07631 168.742 / 0);
+ 
+}
+.pequena-desc{
+    width: 100%;
+    font-family: "Zalando Sans Expanded",sans-serif;
+    font-size: 12px;
+    color: #d8d7d7;
+}
+.preco-4{
+    font-size: 30px;
+    color:oklch(45.5% 0.188 13.697);
+    font-family: "Open Sans",sans-serif;
+    font-weight: 500
+    ;
+}
+.topicos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+    font-family: "Open Sans",sans-serif;
+    color: #d8d7d7;
+    font-size: 15px;
+
+}
+.comprar-4{
+    border-radius: 1rem;
+    border: 0px;
+    padding: 9px 4px;
+    font-family: "Zalando Sans Expanded",sans-serif;
+    transition: transform .2s ease-in-out;
+    background-color:oklch(29.241% 0.11564 11.194);
+    color: #d8d7d7;
+    
+    list-style: none;
+;
+}
+.comprar-4:hover{
+    transform: translateY(-5px);
+    box-shadow: 3px 3px 2px oklch(56.992% 0.21844 10.876);
+}
+/* fim cards */
+
+article{
+    margin-top: 1rem;
+    width: 70%;
+    height: auto;
+}
+.conteiner-article{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: right;
+}
+.conteiner-article h1{
+    width: 50%;
+    font-family: "Cal sans",sans-serif;
+    font-size:clamp(1.5rem,3vw,3rem);
+    color: white;
+    text-align:right;
+}
+/* tabela */
+
+
+.tabela-main{
+    width: 82%;
+    height: auto;
+}
+
+.conteiner_tabela{
+    margin: 1.5rem 0px;
+    width: 90%;
+    height: auto;
+}
+
+.titulo{
+    text-align: center;
+    font-size:  clamp(15px,3vw,30px);
+    font-family: "Cal sans",sans-serif;
+}
+
+td,th{
+    padding: 16px;
+    padding: 16px 0px;
+    border: none;
+    text-align: center;
+    transition: transform .2s ease-in-out;
+}
+table{
+    border: none;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;   
+    overflow: hidden;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    background-color: oklch(12.9% 0.042 264.695);
+    transition: transform .2s ease-in-out;
+}
+table:hover{
+    transform: scale(1.03);
+
+}
+th{
+    background-color: #1e1e1e;
+    font-family: "Zalando Sans Expanded",sans-serif;
+    font-size: 15px;
+    color:oklch(43.091% 0.16933 12.739);
+    padding: 20px 0;
+}
+.roxo{
+    background-color: #1e1e1e;
+    font-family:  "Cal sans",sans-serif;
+}
+td{
+    color: #d8d7d7;
+    font-family:"Open Sans",sans-serif;
+}
+
+td, th:hover{
+    
+}
+
