@@ -65,9 +65,9 @@ article{
     padding: 0.6rem;
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
-    background-color: #e4600e;
+    background-color: #99ff19;
     color: #000000;
-    border: 1px solid #e4600e;
+    border: 1px solid #99ff19;
     border-radius: 4rem;
     transition: transform .3s ease-in-out;
   
@@ -92,7 +92,7 @@ article{
 }
 .botao-2:hover{
     transform: translateY(-8px);
-    border: 1px solid #e4600e;
+    border: 1px solid #99ff19;
 }
 a{
     text-decoration: none;
@@ -120,7 +120,7 @@ main{
     transform-style: preserve-3d;
     transition: transform .7s;
     cursor: pointer;
-    box-shadow: 5px 7.5px 10px #e4600e71;
+    box-shadow: 5px 7.5px 10px #99ff1971;
     border-radius: 0.3rem;
     min-height: 600px;
 }
@@ -254,7 +254,7 @@ section{
 }
 .col-section{
     font-family: "Open Sans", sans-serif;
-    color: #FFF;
+    color: #99ff19;
     line-height: 2;
 }
 
@@ -266,7 +266,7 @@ section{
 .col-section h1{
     font-size:  clamp(1rem,3vw,2rem);
     font-family:  "Cal Sans", sans-serif;
-    color: #e4600e;
+    color: #99ff19;
     text-align: right;
 }
 
@@ -366,4 +366,42 @@ section:hover{
 .Modo_Escuro{
     color: #fafafa;
     background-color: #050505;
+}
+
+.paragrafo2{
+    position: static;
+    font-size: clamp(3rem,6vw,6rem);
+    font-family:  "Cal Sans", sans-serif;
+    color: #99ff19;
+    left: 15%;
+    margin-left: 15%;
+    margin-bottom: 10px;
+   
+}
+.uniao_options{
+    flex-direction:row;
+    text-align: center;
+    display:grid;
+    grid-template-columns: auto;
+}
+.box {
+    border: #fafafa 5px ;
+    color: #1a1a1a;
+    background-color: #99ff19;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    justify-self: center;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    font-size: 30px;
+    font-family:  "Open Sans", sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.Space {
+    width: 50%;
+    justify-self: center;
 }
