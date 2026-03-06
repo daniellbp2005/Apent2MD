@@ -80,18 +80,16 @@ a{
 }
 .cards{
     margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     gap: 20px;
-    width: 75%;
+    width: 72%;
     height: auto;
 }
 .col-1{
     display: flex;
     flex-direction: column;
-    max-width: 23%;
+    max-width: 100%;
     gap: 14px;
     padding: 1.2rem;
     background: linear-gradient(0deg,#000000,oklch(37.997% 0.07631 168.742 / 0.466));
@@ -166,7 +164,7 @@ a{
 .col-2{
     display: flex;
     flex-direction: column;
-    max-width: 23%;
+    max-width: 100%;
     gap: 14px;
     padding: 1rem;
     background-color: oklch(18.674% 0.00002 271.152);
@@ -243,7 +241,7 @@ a{
 .col-3{
     display: flex;
     flex-direction: column;
-    max-width: 23%;
+    max-width: 100%;
     gap: 14px;
     padding: 1rem;
     background-color: oklch(12.9% 0.042 264.695);
@@ -321,7 +319,7 @@ a{
 .col-4{
     display: flex;
     flex-direction: column;
-    max-width: 23%;
+    max-width: 100%;
     gap: 14px;
     padding: 1rem;
     background-color: oklch(12.9% 0.042 264.695);
@@ -473,4 +471,13 @@ td{
     color: #d8d7d7;
     font-family:"Open Sans",sans-serif;
 }
+
+@media screen and (max-width: 1000px) {
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+    }
+    
+}
+
 
