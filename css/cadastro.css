@@ -167,3 +167,6 @@ input:hover{
         grid-template-columns:1fr;
     }
 }
+.oi {
+    color: #1e1e1e;
+}

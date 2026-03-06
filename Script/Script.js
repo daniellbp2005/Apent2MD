@@ -165,7 +165,7 @@ function PretoGeral(){
     Burro.src = "../img/Hesko-remove.png"
     Header.href = "../css/header.css";
     Style.href = "../css/style.css";
-    Footer.href = "../css/footer.css";
+    Footer.href = "../css/footer.css"
     click--
     }
 }
