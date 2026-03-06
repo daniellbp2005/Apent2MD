@@ -18,8 +18,8 @@ article{
     position: relative;
     z-index: 10;
     display: flex;
-    align-items: center;
-
+    align-items: flex-start;
+    justify-content: center;
 
 }
 .hole{
@@ -251,6 +251,7 @@ section{
     transition: transform .3s ease-in-out;
     overflow-x: hidden;
     overflow-y: hidden;
+    margin-bottom: 3rem;
 }
 .col-section{
     font-family: "Open Sans", sans-serif;
@@ -572,5 +573,12 @@ input:hover{
 @media screen and (max-width: 1000px){
     .div-login{
         grid-template-columns:1fr;
+    }
+}
+
+@media screen and (max-width: 755px){
+   
+    main{
+        grid-template-columns: repeat(2,1fr);
     }
 }
