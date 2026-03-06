@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/header.css" id="message" >
-    <link rel="stylesheet" href="../css/cadastro.css" id="widen" >
+    <link rel="stylesheet" href="../css/style.css" id="widen" >
     <link rel="stylesheet" href="../css/footer.css" id="resist" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="../img/Hesko-remove.png">
@@ -46,7 +46,7 @@
                         </ul>
                     </li>
                     <li class="dropdown" >
-                        <a href="Chat.html" class="borda">CONTATO</a>
+                        <a href="../Suporte/Chat.html" class="borda">CONTATO</a>
                         
                     </li>
                    
@@ -65,25 +65,25 @@
             </div>
             <div class="col-d">
                 <div class="Pai">
-                    <h1>Crie uma Conta</h1>
+                    <h1 class="Modo" >Crie uma Conta</h1>
                     <div class="logs">
                         <div class="circulo">
-                            <img src="../img/github_foto.png" alt="">
+                            <img src="../img/github_foto.png" id="a">
                         </div>
                         <div class="circulo">
-                            <img src="../img/X_foto.png" alt="">
+                            <img src="../img/X_foto.png" id="b">
                             </div>
                         <div class="circulo">
-                            <img src="../img/instagram_foto.png" alt="">
+                            <img src="../img/instagram_foto.png" id="c">
                         </div>
                     </div>
                     <div class="texto">
                         <p>Faça login mais rápido, usando suas contas acima e faça login por elas</p>
                     </div>
                     <div class="card">
-                        <input type="text" placeholder="Nome">
-                        <input type="email" placeholder="Email">
-                        <input type="password" placeholder="Senha">
+                        <input type="text" placeholder="Nome" required maxlength="20" >
+                        <input type="email" placeholder="Email" required  >
+                        <input type="password" placeholder="Senha" required minlength="12" maxlength="15" >
                         <br>
                         <button><a href="../index.html">Login</a></button>
                     </div>

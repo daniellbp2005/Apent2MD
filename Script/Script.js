@@ -64,7 +64,7 @@ function PRETO(){
     Style.href = "./css/css_White.css"
     Footer.href = "./css/footer_White.css"
     Shrek.style.filter = "invert(100%)"
-    Burro.style.filter = "invert(100%)"
+    Burro.src = "./img/u.png"
     click++
     }
     else{
@@ -76,7 +76,7 @@ function PRETO(){
     Icon1.classList.remove("col-section")
     Slide.style.backgroundImage = "url(./Img/Pingu_Branco.gif)"
     Shrek.style.filter = "invert(100%)"
-    Burro.style.filter = "invert(100%)" 
+    Burro.src = "./img/u.png" 
     Header.href = "./css/header_White.css"
     Style.href = "./css/css_White.css"
     Footer.href = "./css/footer_White.css" 
@@ -93,7 +93,7 @@ function PRETO(){
     Icon1.classList.remove("col-section_Black")
     IMG.style.filter = "invert(0%)"
     Shrek.style.filter = "invert(0%)"
-    Burro.style.filter = "invert(0%)"
+    Burro.src = "./img/Hesko-remove.png"
     Header.href = "./css/header.css"
     Style.href = "./css/style.css"
     Footer.href = "./css/footer.css"
@@ -108,7 +108,7 @@ function PRETO(){
     Icon1.classList.remove("col-section_Black")
     Slide.style.backgroundImage = "url(./Img/Pingu.gif)"
     Shrek.style.filter = "invert(0%)"
-    Burro.style.filter = "invert(0%)"
+    Burro.src = "./img/Hesko-remove.png"
     Header.href = "./css/header.css"
     Style.href = "./css/style.css"
     Footer.href = "./css/footer.css"
@@ -124,22 +124,51 @@ function PretoGeral(){
     const Style = document.getElementById("widen");
     const Shrek = document.getElementById("BORACO");
     const Burro = document.getElementById("Burro");
+    const IMG1 = document.getElementById("a")
+    const IMG2 = document.getElementById("b")
+    const IMG3 = document.getElementById("c")
     if(click % 2 == 0){
+        if(IMG1 + IMG2 + IMG3){
     Header.href = "../css/header_White.css";
     Style.href = "../css/css_White.css";
     Footer.href = "../css/footer_White.css";
     Shrek.style.filter = "invert(100%)";
-    Burro.style.filter = "invert(100%)";
+    Burro.src = "../img/u.png"
+    IMG1.style.filter = "invert(100%)"
+    IMG2.style.filter = "invert(100%)"
+    IMG3.style.filter = "invert(100%)"
     click++;
     }
     else{
-    Shrek.style.filter = "invert(0%)";
-    Burro.style.filter = "invert(0%)";
+    Header.href = "../css/header_White.css";
+    Style.href = "../css/css_White.css";
+    Footer.href = "../css/footer_White.css";
+    Shrek.style.filter = "invert(100%)";
+    Burro.src = "../img/u.png"
+    click++
+    }
+    }
+    else{
+        if(IMG1 + IMG2 + IMG3){
     Header.href = "../css/header.css";
     Style.href = "../css/style.css";
     Footer.href = "../css/footer.css";
-    click--; 
+    Shrek.style.filter = "invert(0%)";
+    Burro.src = "../img/Hesko-remove.png"
+    IMG1.style.filter = "invert(0%)"
+    IMG2.style.filter = "invert(0%)"
+    IMG3.style.filter = "invert(0%)"
+    click--  
     }
+    else{
+    Shrek.style.filter = "invert(0%)";
+    Burro.src = "../img/Hesko-remove.png"
+    Header.href = "../css/header.css";
+    Style.href = "../css/style.css";
+    Footer.href = "../css/footer.css";
+    click--
+    }
+}
 }
 
 function PretoServico(){
@@ -153,13 +182,13 @@ function PretoServico(){
     Style.href = "../css/styles.css";
     Footer.href = "../css/footer_White.css";
     Shrek.style.filter = "invert(100%)";
-    Burro.style.filter = "invert(100%)";
+    Burro.src = "../img/u.png"
     click++;
     }
     else{
     Style.href = "../css/styles_Servicos.css";
     Shrek.style.filter = "invert(0%)";
-    Burro.style.filter = "invert(0%)";
+    Burro.src = "../img/Hesko-remove.png"
     Header.href = "../css/header.css";
     Footer.href = "../css/footer.css";
     click--; 

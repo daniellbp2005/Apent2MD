@@ -45,9 +45,9 @@ body{
     padding: 0.6rem;
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
-    background-color: #99ff19;
+    background-color: #e4600e;
     color: #000;
-    border: 1px solid #99ff19;
+    border: 1px solid #e4600e;
     border-radius: 4rem;
     transition: transform .3s ease-in-out;
 }
@@ -70,7 +70,7 @@ body{
 }
 .botao2:hover{
     transform: translateY(-8px);
-    border: 1px solid #99ff19;
+    border: 1px solid #e4600e;
 }
 
 /* main cards */
