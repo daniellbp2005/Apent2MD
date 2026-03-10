@@ -236,3 +236,24 @@ function COISA(){
        Shrek.src = "../img/FixBackground.png" 
     }, 15000);
 }
+
+function Preto(){
+    const Header = document.getElementById("message");
+    const Footer = document.getElementById("resist");
+    const Style = document.getElementById("widen");
+    const Burro = document.getElementById("Burro");
+    if(click % 2 == 0){
+    Header.href = "../css/header_White.css";
+    Style.href = "../css/pag_white.css";
+    Footer.href = "../css/footer_White.css";
+    Burro.src = "../img/u.png"
+    click++;
+    }
+    else{
+    Style.href = "../css/pag_cliente.css";
+    Burro.src = "../img/Hesko-remove.png";
+    Header.href = "../css/header.css";
+    Footer.href = "../css/footer.css";
+    click--; 
+    }
+}

@@ -376,13 +376,18 @@ section:hover{
     font-family:  "Cal Sans", sans-serif;
     color: #5e17eb;
     left: 15%;
-    margin-left: 15%;
+
     margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
    
 }
+
 .uniao_options{
     flex-direction:row;
-    text-align: center;
+    text-align: left;
     display:grid;
     grid-template-columns: auto;
 }
@@ -391,16 +396,27 @@ section:hover{
     color: #fafafa;
     background-color: #5e17eb;
     border-radius: 10px;
-    width: 100%;
+    width: 548.8px;
     height: 50px;
-    justify-self: center;
     cursor: pointer;
     text-decoration: none;
     list-style: none;
-    font-size: 30px;
+    font-size: 20px;
     font-family:  "Open Sans", sans-serif;
     font-weight: 600;
     margin-bottom: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: left;
+}
+.box:hover{
+    background-color: #7336ee;
+}
+.a {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-self: center;
 }
 
 .Space {
@@ -586,3 +602,58 @@ input:hover{
         grid-template-columns:1fr;
     }
 }
+.box1 {
+    border: #1a1a1a 5px ;
+    color: #fafafa;
+    background-color: #5e17eb;
+    border-radius: 10px;
+    width: 600px;
+    height: 75px;
+    justify-self: center;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    font-size: 30px;
+    font-family:  "Open Sans", sans-serif;
+    font-weight: 600;
+    margin-left: 200px;
+
+}
+
+#sec-geral{
+    opacity: 100% ;
+    margin-left: 2%;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.sec-geral{
+    width: 100%;
+    text-align:center;
+    margin-right: 5%;
+
+}
+
+.sec-geral h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.box2 {
+    border: #1a1a1a 5px ;
+    color: #fafafa;
+    background-color: #5e17eb;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    font-size: 30px;
+    font-family:  "Open Sans", sans-serif;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+

@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(../img/coiso.jpg);
+    background-image: url(../img/coiso_b.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,23 +37,23 @@ body {
 
 .card{
     flex: 1;
-    background: #ffff;
+    background: #000000;
     padding: 20px;
     min-height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
     text-align: center;
-    color: black;
+    color: white;
     transition: transform .3s ease-in-out;
     font-family: "Montserrat",sans-serif;
 
 }
 .card:hover{
     transform: translateY(-8px);
-    box-shadow: 0px 2px 3px 1px #5e17eb;
+    box-shadow: 0px 2px 3px 1px #e4600e;
 }
 
 table {
@@ -61,16 +61,16 @@ table {
     margin-bottom: 3rem;
     width: 100%;
     border-collapse: collapse;
-    background: #5e17eb;
+    background: #e4600e;
     border-radius: 10px;
     overflow: hidden;
-    color: white;
+    color: black;
     text-align: center;
     transition: transform .3s ease-in-out;
 }
 table:hover{
     transform: translateY(-8px);
-    box-shadow: 0px 2px 3px 1px #5e17eb;
+    box-shadow: 0px 2px 3px 1px #e4600e;
 }
 
 th,td,tr{
@@ -87,18 +87,18 @@ th, td:hover{
     transform: translateY(-8px);
 }
 th {
-    background: #1e293b;
-    color: white;
+    background: #eed3ab;
+    color: black;
 }
 
 tr:nth-child(even){
-    background: #5e17eb;
+    background: #e4600e;
 }
 
 .status {
     padding: 6px 12px;
     border-radius: 20px;
-    color: white;
+    color: black;
     font-weight: bold;
 }
 
