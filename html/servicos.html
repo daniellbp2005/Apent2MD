@@ -34,7 +34,7 @@
                     <li class="dropdown" >
                         <a>SUPORTE</a>
                         <ul class="submenu">
-                            <li> <a href="../Suporte/Chat.html" style="font-size: 11px;" > Fale Conosco </a></li>
+                            <li> <a href="../Suporte/Chat.html" style="font-size: 13px;" > Fale Conosco </a></li>
                             <li> <a href="./Suporte.html"> Problemas </a></li>
                         </ul>
                     </li>
@@ -64,18 +64,36 @@
                 <p><u>Seu site favorito ilimitado </u></p>
                 <div class="botoes-inicio">
                     <div class="botao1"><a href="#servicos"> VER NOSSOS PLANOS</a></div>
-                    <div class="botao2"><a href="#servicos"> COMPRAR PLANOS</a></div>
+                    <div class="botao2"><a href="#orcamento"> COMPRAR PLANOS</a></div>
                 </div>
             </div>
         </div>  
     </section>
+    
     <main class="cards" id="servicos">
+        <div class="col-4">
+            <div class="pai-4">
+                <div class="nome-4">Creative</div>
+                <button class="especifico-4">Mais Popular</button>
+            </div>
+            <div class="pequena-desc">Perfeito para expandir seu nogôcio virtualmente, e coom qualidade</div>
+            <div class="preco-4">$ 500</div>
+            <div class="topicos">
+                <p>✔ Modelo Exclusivo</p>
+                <p>✔ Atendimento Hesko</p>
+                <p>-</p>
+                <p>-</p>
+                <p>-</p>
+                <p>-</p>
+            </div>
+            <button class="comprar-4"><a href=""> Comprar</a></button>
+        </div>
         <div class="col-1">
             <div class="pai">
                 <div class="nome">Essential</div>
-                <button class="especifico">Mais Popular</button>
+                <button class="especifico">Mais Incrivel</button>
             </div>
-            <div class="pequena-desc">Perfeito para começar seu nogôcio aqui na hesko a melhor empressa</div>
+            <div class="pequena-desc">Perfeito para dar um passo a freta na sua empressa, em expanção</div>
             <div class="preco">$ 500</div>
             <div class="topicos">
                 <p>✔ Modelo Exclusivo</p>
@@ -87,12 +105,13 @@
             </div>
             <button class="comprar"><a href=""> Comprar</a> </button>
         </div>
+        
         <div class="col-2">
             <div class="pai-2">
                 <div class="nome-2">Premium</div>
-                <button class="especifico-2">Mais Popular</button>
+                <button class="especifico-2">Mais Perfeito</button>
             </div>
-            <div class="pequena-desc">Perfeito para começar seu nogôcio aqui na hesko a melhor empressa</div>
+            <div class="pequena-desc">Um exclusivo modelo perfeito com ferramentas unicas, e boa hospedagem</div>
             <div class="preco-2">$ 1500</div>
             <div class="topicos">
                 <p>✔ Modelo Exclusivo</p>
@@ -107,9 +126,9 @@
         <div class="col-3" >
             <div class="pai-3">
                 <div class="nome-3">Ultimate</div>
-                <button class="especifico-3">Mais Popular</button>
+                <button class="especifico-3">Plano++</button>
             </div>
-            <div class="pequena-desc">Perfeito para começar seu nogôcio aqui na hesko a melhor empressa</div>
+            <div class="pequena-desc">Total suporte e acesso globlal, com segurança e atendimento integral </div>
             <div class="preco-3">$ 15000</div>
             <div class="topicos">
                 <p>✔ Ferramentas Cliente Hesko+</p>
@@ -120,23 +139,7 @@
             </div>
             <button class="comprar-3"><a href=""> Comprar</a></button>
         </div>
-        <div class="col-4">
-            <div class="pai-4">
-                <div class="nome-4">Creative</div>
-                <button class="especifico-4">Mais Popular</button>
-            </div>
-            <div class="pequena-desc">Perfeito para começar seu nogôcio aqui na hesko a melhor empressa</div>
-            <div class="preco-4">$ 500</div>
-            <div class="topicos">
-                <p>✔ Modelo Exclusivo</p>
-                <p>✔ Atendimento Hesko</p>
-                <p>-</p>
-                <p>-</p>
-                <p>-</p>
-                <p>-</p>
-            </div>
-            <button class="comprar-4"><a href=""> Comprar</a></button>
-        </div>
+        
     </main>
     <article>
         <div class="conteiner-article">
@@ -234,27 +237,36 @@
         <form>
             <div class="teste">
             <p class="Titulo-Orcamento">Fazer Orçamento</p>
-            <label for="nome">Nome</label>
+            <label for="nome">Nome Completo:</label>
             <input type="text" id="nome" name="nome" placeholder="Fale o seu nome, ou de sua empresa">
                 
-            <label for="email">Email</label>
+            <label for="email">Email Princiapal:</label>
             <input type="email" id="email" name="email" placeholder="Digite seu Email">
                 
-            <label for="numero">Numero</label>
+            <label for="numero">Numero para Contato</label>
             <input type="number" id="numero" name="numero" placeholder="Digite seu Numero">
+
             <label for="servico">Seleção de Serviço</label>
             <select id="servico" name="servico">
-                <option>Alguma Coisa</option>
-                <option>Alguma Coisa</option>
-                <option>Alguma Coisa</option>
-                <option>Alguma Coisa</option>
+                <option>Creative</option>
+                <option>Essential</option>
+                <option>Premium</option>
+                <option>Ultimate</option>
+            </select>
+
+            <label for="urgencia">Urgência</label>
+            <select name="urgencia" id="urgencia">
+                <option>Longo Prazo</option>
+                <option>Médio Prazo</option>
+                <option>Curto Prazo</option>
+                <option>Com Urgencia</option>
             </select>
                 
             <label for="mensagem">Fale o que precisa</label>
-            <textarea id="mensagem" name="mensagem" rows="5" cols="20" >
+            <textarea id="mensagem" name="mensagem" rows="5" cols="20" placeholder="Seja mais especifico alando da sua empresssa">
                 
             </textarea>
-            <button><a href="../index.html">Enviar</a></button>
+            <button><a href="../index.html">Enviar  --></a></button>
             </div>
         </form>
     </main>
