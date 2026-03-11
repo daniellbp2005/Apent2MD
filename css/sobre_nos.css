@@ -132,7 +132,6 @@ button:hover{
 .foto-card:hover{
     transform: translateY(-5px);
     box-shadow: 0px 2px 3px 1px #65eb17;
-
 }
 p{
     font-family: "Open sans", sans-serif;
@@ -157,7 +156,7 @@ p{
     display: flex;
     justify-content: center;
     width: 70%;
-    height: 23%;
+    max-height: 23%;
     display: flex;
     flex-direction: row;
     gap: 13px;

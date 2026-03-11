@@ -23,9 +23,9 @@ article{
     
 }
 .hole{
-    
     width: 100%;
     height:auto;
+    margin-bottom: 3rem;
 }
 .subtitulo{
     position: absolute;
@@ -119,7 +119,7 @@ main{
 .col-card{                     
     position: relative;
     transform-style: preserve-3d;
-    transition: transform .7s;
+    transition: transform .6s;
     cursor: pointer;
     box-shadow: 5px 7.5px 10px #5e17eb71;
     border-radius: 0.3rem;
@@ -139,6 +139,7 @@ main{
     font-size: clamp(1rem,3vw,2.5rem);
     font-family: "Cal Sans", sans-serif;
     color: #fff;
+    text-shadow: 1px 4px 2px #5e17eb;
 }
 .card-back{
     transform: rotateY(180deg);  /* cmc virado */
@@ -258,6 +259,7 @@ section{
     font-family: "Open Sans", sans-serif;
     color: #FFF;
     line-height: 2;
+    padding: 2rem;
 }
 
 .col-section_Black{
@@ -392,11 +394,11 @@ section:hover{
     grid-template-columns: auto;
 }
 .box {
-    border: #1a1a1a 5px ;
+    border: #fafafa solid 1px ;
     color: #fafafa;
-    background-color: #5e17eb;
-    border-radius: 10px;
-    width: 548.8px;
+    background-color: #1a1a1a;
+    border-radius: 1rem;
+    width: 40%;
     height: 50px;
     cursor: pointer;
     text-decoration: none;
@@ -411,12 +413,22 @@ section:hover{
 }
 .box:hover{
     background-color: #7336ee;
+    
+}
+.box li{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    
 }
 .a {
-    width: inherit;
-    height: inherit;
+    padding: 0.3rem;
     display: flex;
     justify-self: center;
+    text-align: center;
+}
+.a:hover {
+        text-align: center;
 }
 
 .Space {
@@ -426,13 +438,6 @@ section:hover{
 
 .paragrafo a:hover {
     text-decoration: underline;
-}
-
-@media screen and (max-width: 755px){
-   
-    main{
-        grid-template-columns: repeat(2,1fr);
-    }
 }
 
 .conteiner-login{
@@ -586,10 +591,6 @@ a{
     justify-content: center;
 }
 
-button:hover{
-    transform: translateY(-7px);
-    box-shadow: 0px 3px 3px #a5cc72;
-}
 
 input:hover{
     transform: translateY(-4px);
@@ -597,11 +598,7 @@ input:hover{
     
 }
 
-@media screen and (max-width: 1000px){
-    .div-login{
-        grid-template-columns:1fr;
-    }
-}
+
 .box1 {
     border: #1a1a1a 5px ;
     color: #fafafa;
@@ -622,7 +619,6 @@ input:hover{
 
 #sec-geral{
     opacity: 100% ;
-    margin-left: 2%;
     width: 100%;
     font-family: "Open Sans", sans-serif;
     display: flex;
@@ -631,7 +627,6 @@ input:hover{
 .sec-geral{
     width: 100%;
     text-align:center;
-    margin-right: 5%;
 
 }
 
@@ -657,3 +652,138 @@ input:hover{
     margin-bottom: 50px;
 }
 
+.conteiner-centralizar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form{
+    width: 80%;
+    height: auto;
+    background: linear-gradient(0deg,#000000,oklch(29.858% 0.13241 262.055 / 0.849));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    border-radius: 2rem;
+    overflow-y: hidden;
+    transition: transform .2s ease-in-out;
+}
+.form:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 7px 5px 3px #5e17eb75 ;
+}
+
+
+
+.col-form-e{
+    width: 42%;
+}
+.col-form-e img{
+    width: 100%;
+    height: 100%;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58%;
+}
+.teste{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    gap: 3px;
+    margin-left: 10%;
+    font-family: "Open Sans",sans-serif;
+    color: white;
+}
+input{
+    width: 90%;
+    padding: 0.7rem 1rem;
+    border: 5px solid #371f68;
+    border-radius: 1.5rem;
+    transition: transform .2s ease-in-out;
+    
+}
+input:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 3px 5px 1px #494949;
+}
+textarea{
+    border: 5px solid #371f68;
+    width: 90%;
+    resize: none;
+    border-radius: 0.5rem;
+    transition: transform .2s ease-in-out;
+    text-align:start;
+}
+textarea:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 3px 5px 1px #494949;
+}
+select:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 3px 5px 1px #494949;
+}
+select{
+    border: 5px solid #371f68;
+    width: 40%;
+  
+    border-radius: 0.5rem;
+    transition: transform .2s ease-in-out;
+    padding: 0.5rem;
+}  
+.Titulo-Orcamento{
+    font-size: clamp(18px,3vw,35px);
+    color:white ;
+    text-align: center;
+    margin-right: 10%;
+    font-family: "Cal sans",sans-serif;
+
+}
+label{
+    margin-top: 1.5rem;
+}
+form button{
+    padding: 0.8rem 1rem;
+    margin-top: 1.5rem;
+    width: 90%;
+    border-radius: 1.5rem;
+    border: none;
+    transition: transform .2s ease-in-out;
+    background-color: #5e17eb;
+    color: white;
+    font-family: "Cal sans",sans-serif;
+    font-size:22px;
+
+}
+form button:hover{
+    transform: translateY(-8px);
+    box-shadow: 0px 3px 5px 1px black;
+    
+}
+
+.text_Left_White{
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px){
+    .div-login{
+        grid-template-columns:1fr;
+    }
+}
+
+@media screen and (max-width: 755px){
+   
+    main{
+        grid-template-columns: repeat(2,1fr);
+    }
+}

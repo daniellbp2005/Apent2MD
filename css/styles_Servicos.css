@@ -534,7 +534,7 @@ input:hover{
 textarea{
     border: 5px solid #371f68;
     width: 90%;
- 
+    resize: none;
     border-radius: 0.5rem;
     transition: transform .2s ease-in-out;
     text-align:start;

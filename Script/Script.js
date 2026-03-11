@@ -177,12 +177,14 @@ function PretoServico(){
     const Style = document.getElementById("Serv");
     const Shrek = document.getElementById("BORACO");
     const Burro = document.getElementById("Burro");
+    const IMG = document.getElementById("montana");
     if(click % 2 == 0){
     Header.href = "../css/header_White.css";
     Style.href = "../css/styles.css";
     Footer.href = "../css/footer_White.css";
     Shrek.style.filter = "invert(100%)";
     Burro.src = "../img/u.png"
+    IMG.src = "../img/col-img3.jpg"
     click++;
     }
     else{
@@ -191,50 +193,9 @@ function PretoServico(){
     Burro.src = "../img/Hesko-remove.png"
     Header.href = "../css/header.css";
     Footer.href = "../css/footer.css";
+    IMG.src = "../img/montana.png"
     click--; 
     }
-}
-
-function COISA(){
-    const Shrek = document.getElementById("BORACO")
-    Shrek.style.transition = "5s"
-    Shrek.style.opacity = "0%"
-    setTimeout(() => {
-    Shrek.src = "../img/shrek2.jpg"
-       Shrek.style.opacity = "100%"
-       Shrek.style.height = "80vh"
-    }, 5000);
-    setTimeout(() => {
-       Shrek.style.transition = "1s" 
-       Shrek.style.transform = "scale(3)" 
-    }, 7000);
-        setTimeout(() => {
-       Shrek.style.transform = "scale(1)" 
-    }, 8000);
-        setTimeout(() => {
-       Shrek.style.transition = "1s" 
-       Shrek.style.transform = "scale(3)" 
-    }, 9000);
-        setTimeout(() => {
-       Shrek.style.transform = "scale(1)" 
-    }, 10000);
-        setTimeout(() => {
-       Shrek.style.transition = "1s" 
-       Shrek.style.transform = "scale(3)" 
-    }, 11000);
-        setTimeout(() => {
-       Shrek.style.transform = "scale(1)" 
-    }, 12000);
-        setTimeout(() => {
-       Shrek.style.transition = "1s" 
-       Shrek.style.transform = "scale(3)" 
-    }, 13000);
-        setTimeout(() => {
-       Shrek.style.transform = "scale(1)" 
-    }, 14000);
-            setTimeout(() => {
-       Shrek.src = "../img/FixBackground.png" 
-    }, 15000);
 }
 
 function Preto(){
@@ -255,5 +216,21 @@ function Preto(){
     Header.href = "../css/header.css";
     Footer.href = "../css/footer.css";
     click--; 
+    }
+}
+
+function COISA(){
+    const Email = document.getElementById("Email").value
+    const Pass = document.getElementById("Pass").value
+    const Img = document.getElementById("Calo")
+
+    if( Email == "shrek" + Pass == "Burro" ){
+        Img.style.transition = "5s"
+        Img.style.transform = "scale(3.5)"
+        Img.style.opacity = "100%"
+        setTimeout(Img.style.opacity = "0%",6001)
+    }
+    else {
+        window.location.href = "../index.html"
     }
 }
