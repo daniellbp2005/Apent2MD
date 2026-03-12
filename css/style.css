@@ -781,6 +781,13 @@ form button:hover{
     }
 }
 
+.Modo {
+    color:#000
+}
+.texto p {
+    color: #000;
+}
+
 @media screen and (max-width: 755px){
    
     main{

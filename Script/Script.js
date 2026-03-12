@@ -220,17 +220,41 @@ function Preto(){
 }
 
 function COISA(){
-    const Email = document.getElementById("Email").value
-    const Pass = document.getElementById("Pass").value
+    Email = document.getElementById("Email").value
+    Pass = document.getElementById("pass").value
     const Img = document.getElementById("Calo")
-
-    if( Email == "shrek" + Pass == "Burro" ){
+    
+    if( Email == "shrek" && Pass == "Burro" ){
         Img.style.transition = "5s"
         Img.style.transform = "scale(3.5)"
         Img.style.opacity = "100%"
-        setTimeout(Img.style.opacity = "0%",6001)
+        Img.style.zIndex = "100"
+    }
+    else if(Email == "" && Pass == ""){
+        alert("Please enter your gmail and password")
+    
+    }
+    else if (Email == "" && Pass !== "" ){
+        alert("Not a valid Email! Please retry.")
+    }
+    else if (Email !== "" && Pass == "" ){
+        alert("Not a valid Password! Please retry.")
     }
     else {
         window.location.href = "../index.html"
     }
+}
+
+function Igor_Overload(){
+    const Daniel = document.getElementById("fotoD")
+    const Matheus = document.getElementById("fotoM")
+    const Gustavo = document.getElementById("fotoG")
+    const Igor = document.getElementById("fotoI")
+    const Derick = document.getElementById("fotoDe")
+
+    Daniel.src = "../img/igor.png"
+    Matheus.src = "../img/igor.png"
+    Gustavo.src = "../img/igor.png"
+    Derick.src = "../img/igor.png"
+
 }

@@ -763,6 +763,14 @@ form button:hover{
     box-shadow: 0px 3px 5px 1px black;
     
 }
+
+.Modo {
+    color:#fafafa
+}
+
+.texto p {
+    color: #fafafa;
+}
 @media screen and (max-width: 1000px){
     .div-login{
         grid-template-columns:1fr;
